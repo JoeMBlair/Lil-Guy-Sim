@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://dteg1cr2jg0eq"]
+
+[ext_resource type="Script" path="res://objects/characters/lil_guy/lil_guy.gd" id="1_rkx66"]
+[ext_resource type="Material" uid="uid://bq8vlp6nyhifg" path="res://objects/characters/lil_guy/lil_guy_texture.tres" id="2_guxke"]
+[ext_resource type="Script" path="res://objects/characters/lil_guy/path_finding.gd" id="3_sxd8g"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f2ak4"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_i4wxd"]
+material = ExtResource("2_guxke")
+
+[node name="LilGuy" type="CharacterBody3D"]
+script = ExtResource("1_rkx66")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_f2ak4")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_i4wxd")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+script = ExtResource("3_sxd8g")
