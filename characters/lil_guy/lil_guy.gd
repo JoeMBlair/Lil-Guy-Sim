@@ -20,16 +20,7 @@ func _ready():
 		clickable.input_event.connect(_on_click)
 
 
-func _process(delta):
-	
-	pass
-	
-
 func _physics_process(delta):
-	if new_target != current_target:
-		path_find.target_position = new_target
-		current_target = new_target
-	
 	if not path_find.is_navigation_finished():
 		var path_pos = path_find.get_next_path_position()
 		look_at(path_pos)
@@ -37,14 +28,18 @@ func _physics_process(delta):
 	else:
 		velocity = Vector3.ZERO
 	move_and_slide()
-	
+
+
+func update_target(target : Vector3):
+	if target != current_target:
+		path_find.target_position = target
+		current_target = target
 
 
 func _on_click(camera, event, click_position, click_normal, shape_idx):
 	if event is InputEventMouseButton and event.pressed:
-		new_target = click_position
+		update_target(click_position)
 		marker_mesh.global_position = click_position
-		print(click_position)
 
 
 func _on_area_detect_body_entered(body):

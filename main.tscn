@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://dx3jsqij7tv1q"]
 
-[ext_resource type="Material" uid="uid://8e552bwfh76a" path="res://objects/floor/floor_texture.tres" id="1_v355l"]
-[ext_resource type="PackedScene" uid="uid://dteg1cr2jg0eq" path="res://objects/characters/lil_guy/lil_guy.tscn" id="2_jtemn"]
-[ext_resource type="Environment" uid="uid://ce3ljxe51aoou" path="res://objects/enviroment/world_eniviroment.tres" id="3_mc3kk"]
-[ext_resource type="PackedScene" uid="uid://6a70supskj30" path="res://objects/enviroment/tree/tree.tscn" id="3_tpq3g"]
+[ext_resource type="Material" uid="uid://8e552bwfh76a" path="res://enviroment/floor/floor_texture.tres" id="1_v355l"]
+[ext_resource type="PackedScene" uid="uid://dteg1cr2jg0eq" path="res://characters/lil_guy/lil_guy.tscn" id="2_jtemn"]
+[ext_resource type="Environment" uid="uid://ce3ljxe51aoou" path="res://enviroment/world_eniviroment.tres" id="3_mc3kk"]
+[ext_resource type="PackedScene" uid="uid://6a70supskj30" path="res://enviroment/tree/tree.tscn" id="3_tpq3g"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_ijx2d"]
 vertices = PackedVector3Array(-14.25, 0.5, -3.5, -9, 0.5, -3.25, -9, 0.5, -4.75, -14.25, 0.5, -3.5, -9, 0.5, -4.75, -8.5, 0.5, -5.25, -7, 0.5, -14.25, -14.25, 0.5, -14.25, -8.5, 0.5, -5.25, -7, 0.5, -5.25, -7, 0.5, -14.25, 6.75, 0.5, -2.25, 7, 0.5, -6, 6, 0.5, -6.75, -6.25, 0.5, -4.75, -6.25, 0.5, -2.25, 6.75, 0.5, -8.75, 7.5, 0.5, -8.75, 7.5, 0.5, -14.25, 6, 0.5, -7.75, 6.75, 0.5, -8.75, 7.5, 0.5, -14.25, -7, 0.5, -14.25, -7, 0.5, -5.25, -6.25, 0.5, -4.75, -6.25, 0.5, -4.75, 6, 0.5, -6.75, 6, 0.5, -7.75, 8.75, 0.5, -8.25, 8.75, 0.5, -7.25, 14.25, 0.5, -7.25, 7.5, 0.5, -14.25, 7.5, 0.5, -8.75, 8.75, 0.5, -8.25, 14.25, 0.5, -7.25, 14.25, 0.5, -14.25, 8.25, 0.5, -6, 7, 0.5, -6, 6.75, 0.5, -2.25, 7.75, 0.5, -1.75, 8.75, 0.5, -7.25, 8.25, 0.5, -6, 7.75, 0.5, -1.75, 13.25, 0.5, -1.25, 14.25, 0.5, -1.25, 14.25, 0.5, -7.25, 7.75, 0.5, -1.75, 7.75, 0.5, -0.25, 12.75, 0.5, -0.25, 13.25, 0.5, -1.25, -7.75, 0.5, 14.25, -7.75, 0.5, 11.5, -9, 0.5, 11, -14.25, 0.5, 14.25, -9, 0.5, 11, -9, 0.5, -3.25, -14.25, 0.5, -3.5, -14.25, 0.5, 14.25, 12.75, 0.5, -0.25, 7.75, 0.5, -0.25, 7.25, 0.5, 0.5, 12.75, 0.5, 12.75, 7.25, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 12.75, 12.75, 0.5, 12.75, -6.25, 0.5, 11, -7.75, 0.5, 11.5, -7.75, 0.5, 14.25, -2.25, 0.5, 14.25, -2.25, 0.5, 0.5, -6.25, 0.5, 0.5, -6.25, 0.5, 11, -2.25, 0.5, 14.25)
