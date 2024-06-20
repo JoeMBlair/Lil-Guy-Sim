@@ -124,7 +124,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.3823, 0, 6.84014)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.477, 0, -7.34)
 
 [node name="LilGuy" parent="." node_paths=PackedStringArray("marker_mesh") instance=ExtResource("2_jtemn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.47727, 2.84096, 7.66032)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.477, 0, 7.66)
 marker_mesh = NodePath("../Marker")
 
 [node name="Camera3D" type="Camera3D" parent="."]
